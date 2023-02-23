@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Alarm Clock" content="Alarm Clock"/>
+    <title>Alarm Clock</title>
+
+    <!--Favicon-->
+
+    <link rel = "icon" href="https://library.kissclipart.com/20191014/aie/kissclipart-clock-icon-management-icon-time-icon-474c4db05c8d3baf.png" />
+
+    <!-- Stylesheet-->
+
+    <link rel = "stylesheet" href = "style.css" />
+</head>
+
+<body>
+    <div class= "page-title">
+      <h1>ALARM CLOCK </h1>
+    </div>
+    <div class="main-container d-flex">
+      <div class="clock-container d-flex">
+        <div class="current-time mb" id= "current-time">_ : _ : _ </div>
+        <form class="alarm-form d-flex mb">
+          <div>
+          <select name="hours" id="hours" required></select>
+
+          <select required name="minutes" id="minutes"></select>
+
+          <select required name="seconds" id="seconds"></select>
+          <select required name="am-pm" id="am-pm">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+          </div>
+          <button class="btn submit-button" id="submitButton" type="submit">Set Alarm</button>
+        </form>
+        <div class="set-alarm-container">
+          <div class="set-alarm-container-title mb">ALARMS</div>
+          <div class="alarms-container" id= "alarms-container"></div>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript File -->
+    <script src="./index.js"></script>
+  </body>
+</html>
+</html>
